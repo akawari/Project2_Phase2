@@ -2,7 +2,7 @@ module Contexts
     module StoreContexts
         def create_stores
          @baskin = FactoryBot.create(:store) 
-         @horton = FactoryBot.create(:store, name:"Tim Horton", active:  false)
+         @horton = FactoryBot.create(:store, name:"Tim Horton", active: false)
          @cold = FactoryBot.create(:store, name:"Cold Stone")
         end
       
