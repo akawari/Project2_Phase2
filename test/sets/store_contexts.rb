@@ -6,7 +6,7 @@ module Contexts
          @cold = FactoryBot.create(:store, name:"Cold Stone")
         end
       
-       def destroy_stores
+       def remove_stores
         @baskin.destroy
         @horton.destroy
         @cold.destroy
@@ -17,7 +17,7 @@ module Contexts
          @dazs = FactoryBot.create(:store, name: "Haagen Dazs", active: false)
        end
       
-       def destroy_additional_stores
+       def remove_additional_stores
          @godiva.destroy
          @dazs.destroy
        end

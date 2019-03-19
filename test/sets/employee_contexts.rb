@@ -5,7 +5,7 @@ module Contexts
          @yara = FactoryBot.create(:employee, first_name: "Yara", last_name:"Al-Abdulghani", date_of_birth: 2002-04-13, role: "manager" )
         end
       
-       def destroy_employees
+       def remove_employees
         @ahmad.destroy
         @yara.destroy
        end
@@ -15,7 +15,7 @@ module Contexts
          @sara = FactoryBot.create(:employee, first_name: "Sara", last_name: "Al-Hemaidi", date_of_birth: 1998-03-21)
        end
       
-       def destroy_additional_employees
+       def remove_additional_employees
          @noora.destroy
          @sara.destroy
        end

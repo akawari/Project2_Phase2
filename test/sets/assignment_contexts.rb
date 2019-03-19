@@ -6,7 +6,7 @@ module Contexts
          @a3 = FactoryBot.create(:assignment, employee: @sara, store: @horton, start_date: 2019-03-18)
         end
       
-       def destroy_assignments
+       def remove_assignments
         @a1.destroy
         @a2.destroy
         @a3.destroy
@@ -17,7 +17,7 @@ module Contexts
          @a5 = FactoryBot.create(:assignment, employee: @godiva, store: @horton, start_date: 2018-05-11)
        end
       
-       def destroy_additional_assignments
+       def remove_additional_assignments
          @a4.destroy
          @a5.destroy
        end
