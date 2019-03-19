@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class EmployeeTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  should have_many(:assignments)
+  should have_one(:store).through(:assignments)
 end
